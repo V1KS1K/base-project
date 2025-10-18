@@ -1,3 +1,6 @@
+
+https://v1ks1k.github.io/base-project/
+
 ```
 base-project/
 │
@@ -23,14 +26,10 @@ base-project/
 │       └── location.svg           # Иконка местоположения
 │
 ├── scripts/                       # Директория скриптов
-│   ├── main.js                    # Основной скрипт
-│   ├── filters.js                 # Фильтрация проектов
-│   ├── modal.js                   # Управление модальными окнами
-│   └── form-validation.js         # Валидация форм
+│   └── main.js                    # Основной скрипт
 │
 ├── assets/                        # Дополнительные ресурсы
-│   ├── resume.pdf                 # Резюме для скачивания
-│   └── fonts/                     # Шрифты
+│   └── resume.pdf                 # Резюме для скачивания
 │
 └── README.md                      # Описание проекта
 ```
