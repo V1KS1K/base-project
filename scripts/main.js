@@ -61,3 +61,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+// Добавьте этот код в main.js для улучшения мобильного опыта:
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Оптимизация для мобильных устройств
+    function optimizeForMobile() {
+        // Добавляем класс для определения мобильного устройства
+        if (window.innerWidth <= 768) {
+            document.body.classList.add('mobile-device');
+        } else {
+            document.body.classList.remove('mobile-device');
+        }
+        
+        // Оптимизация изображений для мобильных
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            if (window.innerWidth <= 768) {
+                img.loading = 'lazy';
+            }
+        });
+    }
+    
+    // Запускаем при загрузке и при изменении размера
+    optimizeForMobile();
+    window.addEventListener('resize', optimizeForMobile);
+    
+    // Улучшаем обработку касаний
+    document.addEventListener('touchstart', function() {}, {passive: true});
+});
